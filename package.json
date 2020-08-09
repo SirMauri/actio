@@ -8,6 +8,7 @@
     "@zeit/next-css": "1.0.1",
     "@zeit/next-sass": "1.0.1",
     "animate.css": "3.7.2",
+    "axios": "^0.19.2",
     "classnames": "2.2.6",
     "moment": "2.24.0",
     "mongoose": "^5.9.27",
@@ -29,6 +30,7 @@
     "react-tagsinput": "3.19.0",
     "webpack": "4.43.0"
   },
+  "proxy": "http://localhost:8081",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
