@@ -72,7 +72,6 @@ export default function EcommercePage() {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionLatestOffers />
-        <SectionProducts />
       </div>
 
       <Footer
