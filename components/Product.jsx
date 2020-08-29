@@ -15,20 +15,25 @@ import Favorite from '@material-ui/icons/Favorite';
 import styles from 'assets/jss/nextjs-material-kit-pro/pages/ecommerceSections/latestOffersStyle.js';
 
 import gucci from 'assets/img/examples/gucci.jpg';
+import Link from 'next/link';
 
 const useStyles = makeStyles(styles);
 
 export default (props) => {
   const classes = useStyles();
-
+  const idArr = props.id.split('/');
+  const id = idArr[idArr.length - 1];
+  console.log(id);
   return (
     <GridItem md={4} sm={6}>
       <Card product plain>
         <CardHeader image plain>
-          <a href='#pablo'>
-            <img src={props.image} alt='...' />
-          </a>
-          <div className={classes.coloredShadow} style={{ backgroundImage: `"url(${props.image})"`, opacity: 1 }} />
+          <Link href={`/producto/${id}`}>
+            <a>
+              <img src={props.image} alt='...' />
+              <div className={classes.coloredShadow} style={{ backgroundImage: `"url(${props.image})"`, opacity: 1 }} />
+            </a>
+          </Link>
         </CardHeader>
         <CardBody className={classes.textCenter} plain>
           <h4 className={classes.cardTitle}>{props.title}</h4>

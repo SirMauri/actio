@@ -48,7 +48,7 @@ export default function Header(props) {
       document.body.getElementsByTagName('header')[0].classList.remove(classes[changeColorOnScroll.color]);
     }
   };
-  const { color, links, brand, fixed, absolute } = props;
+  const { color, links, fixed, absolute } = props;
   const appBarClasses = classNames({
     [classes.appBar]: true,
     [classes[color]]: color,
@@ -60,7 +60,7 @@ export default function Header(props) {
       <Toolbar className={classes.container}>
         <Button className={classes.title}>
           <Link href='/'>
-            <a>{brand}</a>
+            <a>actio</a>
           </Link>
         </Button>
         <Hidden smDown implementation='css' className={classes.hidden}>

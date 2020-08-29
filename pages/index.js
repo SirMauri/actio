@@ -37,6 +37,16 @@ import face8 from 'assets/img/faces/card-profile2-square.jpg';
 
 import styles from 'assets/jss/nextjs-material-kit-pro/pages/ecommerceStyle.js';
 
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from 'react-apollo';
+import SectionTeams from '../pages-sections/sections-page/SectionTeams';
+
+const client = new ApolloClient({
+  fetchOptions: {
+    credentials: 'include',
+  },
+});
+
 const useStyles = makeStyles(styles);
 
 export default function EcommercePage() {
@@ -48,22 +58,21 @@ export default function EcommercePage() {
   return (
     <div>
       <Header
-        brand='actio'
-        links={<HeaderLinks dropdownHoverColor='info' />}
+        links={<HeaderLinks dropdownHoverColor='white' />}
         fixed
         color='transparent'
         changeColorOnScroll={{
           height: 300,
-          color: 'info',
+          color: 'white   ',
         }}
       />
-      <Parallax image={require('assets/img/examples/clark-street-merc.jpg')} filter='dark' small>
+      <Parallax image={require('assets/img/actio/hero.jpeg')} filter='dark' small>
         <div className={classes.container}>
           <GridContainer>
             <GridItem md={8} sm={8} className={classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)}>
               <div className={classes.brand}>
                 <h1 className={classes.title}>actio</h1>
-                <h4>TAKE ACTION</h4>
+                <h4>buscamos activar una comunidad de corazones amantes de lo humano</h4>
               </div>
             </GridItem>
           </GridContainer>
@@ -71,8 +80,12 @@ export default function EcommercePage() {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionLatestOffers />
+        <ApolloProvider client={client}>
+          <SectionLatestOffers />
+        </ApolloProvider>
       </div>
+
+      <SectionTeams />
 
       <Footer
         theme='dark'
@@ -135,14 +148,12 @@ export default function EcommercePage() {
       >
         <GridContainer>
           <GridItem xs={12} sm={4} md={4}>
-            <h5>About Us</h5>
+            <h5>Nosotros</h5>
             <p>
-              Creative Tim is a startup that creates design tools that make the web development process faster and
-              easier.{' '}
-            </p>
-            <p>
-              We love the web and care deeply for how users interact with a digital product. We power businesses and
-              individuals to create better looking web projects around the world.{' '}
+              actio es una comunidad de personas amantes de lo humano que buscan convertir la bondad y el desarrollo
+              humano en hechos y en acción. Por ello, te invitamos a ser parte de nuestro proyecto, comprando una
+              camiseta. Solo con esa acción, comenzaras a caminar hacia el cambio que tanto deseas y del que tanto
+              hablas.
             </p>
           </GridItem>
           <GridItem xs={12} sm={4} md={4}>

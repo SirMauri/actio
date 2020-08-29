@@ -1,878 +1,175 @@
-import React from "react";
+import React from 'react';
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles';
 // @material-ui/icons
 // import  from "@material-ui/icons/";
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Card from "components/Card/Card.js";
-import CardAvatar from "components/Card/CardAvatar.js";
-import CardHeader from "components/Card/CardHeader.js";
-import CardBody from "components/Card/CardBody.js";
-import CardFooter from "components/Card/CardFooter.js";
-import Button from "components/CustomButtons/Button.js";
-import Muted from "components/Typography/Muted.js";
+import GridContainer from 'components/Grid/GridContainer.js';
+import GridItem from 'components/Grid/GridItem.js';
+import Card from 'components/Card/Card.js';
+import CardAvatar from 'components/Card/CardAvatar.js';
+import CardHeader from 'components/Card/CardHeader.js';
+import CardBody from 'components/Card/CardBody.js';
+import CardFooter from 'components/Card/CardFooter.js';
+import Button from 'components/CustomButtons/Button.js';
+import Muted from 'components/Typography/Muted.js';
 
-import teamsStyle from "assets/jss/nextjs-material-kit-pro/pages/sectionsSections/teamsStyle.js";
+import teamsStyle from 'assets/jss/nextjs-material-kit-pro/pages/sectionsSections/teamsStyle.js';
 
-import bg7 from "assets/img/bg7.jpg";
-import city from "assets/img/examples/city.jpg";
-import marc from "assets/img/faces/marc.jpg";
-import christian from "assets/img/faces/christian.jpg";
-import kendall from "assets/img/faces/kendall.jpg";
-import avatar from "assets/img/faces/avatar.jpg";
-import cardProfile1 from "assets/img/examples/card-profile1.jpg";
-import cardProfile2 from "assets/img/examples/card-profile2.jpg";
-import cardProfile4 from "assets/img/examples/card-profile4.jpg";
-import cardProfile1Square from "assets/img/faces/card-profile1-square.jpg";
-import cardProfile2Square from "assets/img/faces/card-profile2-square.jpg";
-import cardProfile4Square from "assets/img/faces/card-profile4-square.jpg";
-import cardProfile6Square from "assets/img/faces/card-profile6-square.jpg";
+import bg7 from 'assets/img/bg7.jpg';
+import city from 'assets/img/examples/city.jpg';
+import marc from 'assets/img/faces/marc.jpg';
+import christian from 'assets/img/faces/christian.jpg';
+import kendall from 'assets/img/faces/kendall.jpg';
+import avatar from 'assets/img/faces/avatar.jpg';
+import cardProfile1 from 'assets/img/examples/card-profile1.jpg';
+import cardProfile2 from 'assets/img/examples/card-profile2.jpg';
+import cardProfile4 from 'assets/img/examples/card-profile4.jpg';
+import cardProfile1Square from 'assets/img/faces/card-profile1-square.jpg';
+import cardProfile2Square from 'assets/img/faces/card-profile2-square.jpg';
+import cardProfile4Square from 'assets/img/faces/card-profile4-square.jpg';
+import cardProfile6Square from 'assets/img/faces/card-profile6-square.jpg';
+
+import Embajador from '../../components/Embajador';
+
+// images
+import rod from 'assets/img/action_embajadores/rod.jpeg';
+import alex from 'assets/img/action_embajadores/alex.jpg';
+import juan from 'assets/img/action_embajadores/juan.jpeg';
+import analu from 'assets/img/action_embajadores/analu.jpg';
+import clara from 'assets/img/action_embajadores/clara.jpg';
+import elisa from 'assets/img/action_embajadores/elisa.jpg';
+import rorro from 'assets/img/action_embajadores/rorro.jpg';
+import jorge from 'assets/img/action_embajadores/jorge.jpeg';
+import sofia from 'assets/img/action_embajadores/sofia.jpeg';
+import javier from 'assets/img/action_embajadores/javier.jpg';
+import idania from 'assets/img/action_embajadores/idania.jpeg';
+import andrea from 'assets/img/action_embajadores/andrea.jpeg';
+import chispita from 'assets/img/action_embajadores/chispita.jpeg';
+import elizabeth from 'assets/img/action_embajadores/elizabeth.jpeg';
 
 const useStyles = makeStyles(teamsStyle);
 
+const embajadores = [
+  {
+    nombre: 'Andrea Cobos',
+    description:
+      'Andrea Cobos 28 años, es esposa, madre, conferencista internacional de Teología del Cuerpo y consultora familiar. Cuenta con una Maestría en Ciencias de la Familia y actualmente está cursando una especialidad en Teología del Cuerpo por el Instituto de Filadelfia. Creadora de contenido sobre el amor humano, espiritualidad y vida en su cuenta de IG @andreacobostdc. Es parte de la comunidad @amarasyoficial donde dan respuestas a la luz de la teología del cuerpo.',
+    instagram: 'https://www.instagram.com/andreacobostdc/',
+    image: andrea,
+  },
+  {
+    nombre: 'Rorro Echávez',
+    description:
+      'Rorro es un joven optimista que busca impulsar la mejor versión de las personas y las organizaciones. Por eso es creador de contenido, director creativo, conferencista y autor de 2 libros, para ayudar a los demás a crecer como personas para así, juntos crecer como sociedad.',
+    instagram: 'https://www.instagram.com/rorroechavez/',
+    image: rorro,
+  },
+  {
+    nombre: 'Padre Javier Gaxiola LC',
+    description:
+      'Es sacerdote católico desde diciembre del 2017. Es Director local del RC Guadalajara sur y de la sección de jóvenes del Regnum Christi. Autor de “El Último recuerdo” y “Confesiones de un millennial”. Host del podcast “sin filtro” y su propio podcast, ha trabajado y apoyado en la formación y pastoral de jóvenes varones en Alemania, Austria, Italia y México. Apasionado de todo lo humano en el plan divino.',
+    instagram: 'https://www.instagram.com/padregaxiola/',
+    image: javier,
+  },
+  {
+    nombre: 'Ana Lourdes Ezquerra',
+    description:
+      'Ana Lourdes Ezquerra Félix, Lic en Comunicación Publicidad y Relaciones Publicas. Podcaster, Speaker y creadora de contenido de crecimiento personal.',
+    instagram: 'https://www.instagram.com/analourdesef/',
+    image: analu,
+  },
+  {
+    nombre: 'Alex Vargas Delgado',
+    description:
+      'Alex Vargas es estudiante de economía y gestión empresarial en Roma, creador de contenido y apasionado por las relaciones humanas. Alex busca inspirar a Dios  en las personas y compartir que, con amor, grandes cosas suceden.',
+    instagram: 'https://www.instagram.com/alexvardel/',
+    image: alex,
+  },
+  {
+    nombre: 'Mariángela Guerra',
+    description:
+      'Soy Mariángela. Cantante y compositora mexicana. Estudiante de filosofía que busca sumar su granito de arena al mundo desde el Amor y la sinceridad.',
+    instagram: 'https://www.instagram.com/mariangelaguerra/',
+    image: chispita,
+  },
+  {
+    nombre: 'Clara Cuevas',
+    description:
+      'Soy Lic. En comunicación audiovisual,  Conferencista y creadora de contenido enfocada en promoción y análisis de la lectura. Co-creadora del podcast @el.planD. En mi cuenta de Instagram hablo de lo que más amo que es vivir el evangelio acompañada de la cotidianidad de mi vida.',
+    instagram: 'https://www.instagram.com/claracuevas3/',
+    image: clara,
+  },
+  {
+    nombre: 'Elisa',
+    description:
+      'Tengo 21 años. Soy de Veracruz, México. Soy creadora de Contenido en Youtube e Instagram desde el 2016. Estudiante en la Licenciatura de Comunicación.  Soy una mujer dispuesta día con día a proyectar alegría e impactar de manera positiva la vida de los demás a través de sus redes sociales.',
+    instagram: 'https://www.instagram.com/soyelisam/',
+    image: elisa,
+  },
+  {
+    nombre: 'Elizabeth Soto',
+    description:
+      'Es Pedagoga graduada de la Universidad Panamericana. Es conductora y locutora del programa formarte en valora radio, graba cápsulas de contenido formativo, educativo, crecimiento personal y espiritual para María visión. Actualmente es creadora de contenido de valor en redes sociales en plataformas como Spotify y Apple podcasts.',
+    instagram: 'https://www.instagram.com/elizabethsoto6/',
+    image: elizabeth,
+  },
+  {
+    nombre: 'Idania',
+    description:
+      'Idania Ibarra Hernández es originaria de Cocula, Jalisco y tiene 23 años de edad. Estudia la carrera de Derecho. Es apasionada del futbol, emprendedora de un proyecto nuevo venta de articulos religiosos. Es conferencista y creadora de contenido de crecimiento personal integral y desarrollo humano.',
+    instagram: 'https://www.instagram.com/idaniaibarra/',
+    image: idania,
+  },
+  {
+    nombre: 'Juan Ca',
+    description:
+      'Qué tal mi nombre es Juan Carlos Amezcua, soy una persona humilde y servicial, me encanta el poder aportar mi granito de arena y ayudar a los demás, estoy listo para hacer de este mundo uno mejor.',
+    instagram: 'juancaamezcua',
+    image: juan,
+  },
+  {
+    nombre: 'Rod. G. Puerta',
+    description:
+      'Rodrigo es una persona 100% convencida que todos poseemos la sabiduría necesaria para aportar positivamente a la sociedad, sin embargo la sabiduría de algunos se encuentra dormida. Rodrigo se ha preparado para convertirse en una herramienta para despertar esa sabiduría en los demás a través de la consciencia y la atención plena.',
+    instagram: 'https://www.instagram.com/rodgpuerta/',
+    image: rod,
+  },
+  {
+    nombre: 'Jorge Calderón',
+    description:
+      'Soy Jorge Calderon, tengo 25 años. Dedicado al trabajo, familia y amigos. Además, Creador de contenido positivo, buscando ayudar y motivar a personas.',
+    instagram: 'https://www.instagram.com/jorgecalderonf/',
+    image: jorge,
+  },
+  {
+    nombre: 'Sofía Carmona',
+    description:
+      'Sofía Carmona nació en Guadalajara y creció en la tierra de Mexicali. Tiene 20 años y actualmente es cantautora. Es apasionada de la música, las letras, y tiene como propósito contribuir de manera positiva en la sociedad. Actualmente, está preparando y su desarrollando su nuevo proyecto musical con las disqueras Warner Bros. y Universal Music México. En unos meses lanzará su primer álbum, el cual pronto tendremos oportunidad de escuchar.',
+    instagram: 'https://www.instagram.com/sofiacarmona.c/',
+    image: sofia,
+  },
+];
+
 export default function SectionTeams({ ...rest }) {
   const classes = useStyles();
+  const embajadoresGroup = embajadores.map((el, key) => (
+    <Embajador
+      image={el.image}
+      name={el.nombre}
+      description={el.description}
+      causa={el.causa}
+      instagram={el.instagram}
+    />
+  ));
   return (
-    <div className="cd-section" {...rest}>
+    <div className='cd-section' {...rest}>
       {/* Team 1 START */}
       <div className={classes.team}>
         <div className={classes.container}>
-          <GridContainer>
-            <GridItem
-              xs={12}
-              sm={8}
-              md={8}
-              className={
-                classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
-              }
-            >
-              <h2 className={classes.title}>Our Awesome Team 1</h2>
-              <h5 className={classes.description}>
-                This is the paragraph where you can write more details about
-                your team. Keep you user engaged by providing meaningful
-                information.
-              </h5>
-            </GridItem>
-          </GridContainer>
-          <GridContainer>
-            <GridItem xs={12} sm={3} md={3}>
-              <Card profile plain>
-                <CardAvatar profile plain>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={marc} alt="..." className={classes.img} />
-                  </a>
-                </CardAvatar>
-                <CardBody>
-                  <h4 className={classes.cardTitle}>Alec Thompson</h4>
-                  <Muted>
-                    <h6 className={classes.cardCategory}>CEO / Co-Founder</h6>
-                  </Muted>
-                  <p className={classes.description}>
-                    And I love you like Kanye loves Kanye. We need to restart
-                    the human foundation.
-                  </p>
-                </CardBody>
-                <CardFooter profile className={classes.justifyContent}>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="twitter"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-twitter" />
-                  </Button>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="facebook"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-facebook" />
-                  </Button>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="google"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-google" />
-                  </Button>
-                </CardFooter>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={3} md={3}>
-              <Card profile plain>
-                <CardAvatar profile plain>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={kendall} alt="..." className={classes.img} />
-                  </a>
-                </CardAvatar>
-                <CardBody>
-                  <h4 className={classes.cardTitle}>Tania Andrew</h4>
-                  <Muted>
-                    <h6 className={classes.cardCategory}>DESIGNER</h6>
-                  </Muted>
-                  <p className={classes.description}>
-                    Don{"'"}t be scared of the truth because we need to restart
-                    the human foundation. And I love you like Kanye loves Kanye.
-                  </p>
-                </CardBody>
-                <CardFooter profile className={classes.justifyContent}>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="twitter"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-twitter" />
-                  </Button>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="dribbble"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-dribbble" />
-                  </Button>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="linkedin"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-linkedin" />
-                  </Button>
-                </CardFooter>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={3} md={3}>
-              <Card profile plain>
-                <CardAvatar profile plain>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={christian} alt="..." className={classes.img} />
-                  </a>
-                </CardAvatar>
-                <CardBody>
-                  <h4 className={classes.cardTitle}>Christian Mike</h4>
-                  <Muted>
-                    <h6 className={classes.cardCategory}>Web Developer</h6>
-                  </Muted>
-                  <p className={classes.description}>
-                    I love you like Kanye loves Kanye. Don{"'"}t be scared of
-                    the truth because we need to restart the human foundation.
-                  </p>
-                </CardBody>
-                <CardFooter profile className={classes.justifyContent}>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="facebook"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-facebook" />
-                  </Button>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="dribbble"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-dribbble" />
-                  </Button>
-                </CardFooter>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={3} md={3}>
-              <Card profile plain>
-                <CardAvatar profile plain>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={avatar} alt="..." />
-                  </a>
-                </CardAvatar>
-                <CardBody>
-                  <h4 className={classes.cardTitle}>Rebecca Stormvile</h4>
-                  <Muted>
-                    <h6 className={classes.cardCategory}>Web Developer</h6>
-                  </Muted>
-                  <p className={classes.description}>
-                    And I love you like Kanye loves Kanye. We really need to
-                    restart the human foundation.
-                  </p>
-                </CardBody>
-                <CardFooter profile plain className={classes.justifyContent}>
-                  <Button
-                    justIcon
-                    simple
-                    color="google"
-                    href="#pablo"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-google" />
-                  </Button>
-                  <Button
-                    justIcon
-                    simple
-                    color="twitter"
-                    href="#pablo"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-twitter" />
-                  </Button>
-                  <Button
-                    justIcon
-                    simple
-                    color="dribbble"
-                    href="#pablo"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-dribbble" />
-                  </Button>
-                </CardFooter>
-              </Card>
-            </GridItem>
-          </GridContainer>
+          <GridContainer>{embajadoresGroup}</GridContainer>
         </div>
       </div>
-      {/* Team 1 END */}
-      {/* Team 2 START */}
-      <div className={classes.team}>
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem
-              xs={12}
-              sm={8}
-              md={8}
-              className={
-                classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
-              }
-            >
-              <h2 className={classes.title}>The Executive Team 2</h2>
-              <h5 className={classes.description}>
-                This is the paragraph where you can write more details about
-                your team. Keep you user engaged by providing meaningful
-                information.
-              </h5>
-            </GridItem>
-          </GridContainer>
-          <GridContainer>
-            <GridItem xs={12} sm={4} md={4}>
-              <Card plain profile>
-                <CardHeader image plain>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={cardProfile1} alt="..." />
-                  </a>
-                  <div
-                    className={classes.coloredShadow}
-                    style={{
-                      backgroundImage: `url(${cardProfile1})`,
-                      opacity: "1"
-                    }}
-                  />
-                </CardHeader>
-                <CardBody plain>
-                  <h4 className={classes.cardTitle}>Alec Thompson</h4>
-                  <Muted>
-                    <h6 className={classes.cardCategory}>MANAGING PARTNER</h6>
-                  </Muted>
-                </CardBody>
-                <CardFooter profile plain className={classes.justifyContent}>
-                  <Button justIcon round color="twitter">
-                    <i className="fab fa-twitter" />
-                  </Button>
-                  <Button justIcon round color="facebook">
-                    <i className="fab fa-facebook-square" />
-                  </Button>
-                  <Button justIcon round color="dribbble">
-                    <i className="fab fa-dribbble" />
-                  </Button>
-                </CardFooter>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={4} md={4}>
-              <Card plain profile>
-                <CardHeader image plain>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={cardProfile2} alt="..." />
-                  </a>
-                  <div
-                    className={classes.coloredShadow}
-                    style={{
-                      backgroundImage: `url(${cardProfile2})`,
-                      opacity: "1"
-                    }}
-                  />
-                </CardHeader>
-                <CardBody plain>
-                  <h4 className={classes.cardTitle}>George West</h4>
-                  <Muted>
-                    <h6 className={classes.cardCategory}>BACKEND HACKER</h6>
-                  </Muted>
-                </CardBody>
-                <CardFooter profile plain className={classes.justifyContent}>
-                  <Button justIcon round color="linkedin">
-                    <i className="fab fa-linkedin-in" />
-                  </Button>
-                  <Button justIcon round color="facebook">
-                    <i className="fab fa-facebook-square" />
-                  </Button>
-                  <Button justIcon round color="dribbble">
-                    <i className="fab fa-dribbble" />
-                  </Button>
-                </CardFooter>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={4} md={4}>
-              <Card plain profile>
-                <CardHeader image plain>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={cardProfile4} alt="..." />
-                  </a>
-                  <div
-                    className={classes.coloredShadow}
-                    style={{
-                      backgroundImage: `url(${cardProfile4})`,
-                      opacity: "1"
-                    }}
-                  />
-                </CardHeader>
-                <CardBody plain>
-                  <h4 className={classes.cardTitle}>Gina Andrew</h4>
-                  <Muted>
-                    <h6 className={classes.cardCategory}>PHOTOGRAPHER</h6>
-                  </Muted>
-                </CardBody>
-                <CardFooter profile plain className={classes.justifyContent}>
-                  <Button justIcon round color="dribbble">
-                    <i className="fab fa-dribbble" />
-                  </Button>
-                  <Button justIcon round color="twitter">
-                    <i className="fab fa-twitter" />
-                  </Button>
-                </CardFooter>
-              </Card>
-            </GridItem>
-          </GridContainer>
-        </div>
-      </div>
-      {/* Team 2 END */}
-      {/* Team 3 START */}
-      <div className={classes.team}>
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem
-              xs={12}
-              sm={8}
-              md={8}
-              className={
-                classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
-              }
-            >
-              <h2 className={classes.title}>The Executive Team 3</h2>
-              <h5 className={classes.description}>
-                This is the paragraph where you can write more details about
-                your team. Keep you user engaged by providing meaningful
-                information.
-              </h5>
-            </GridItem>
-          </GridContainer>
-          <GridContainer>
-            <GridItem xs={12} sm={6} md={6}>
-              <Card profile plain className={classes.card3}>
-                <GridContainer>
-                  <GridItem xs={12} sm={5} md={5}>
-                    <CardHeader image plain>
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        <img src={cardProfile1Square} alt="..." />
-                      </a>
-                      <div
-                        className={classes.coloredShadow}
-                        style={{
-                          backgroundImage: `url(${cardProfile1Square})`,
-                          opacity: "1"
-                        }}
-                      />
-                    </CardHeader>
-                  </GridItem>
-                  <GridItem xs={12} sm={7} md={7}>
-                    <CardBody plain>
-                      <h4 className={classes.cardTitle}>Alec Thompson</h4>
-                      <Muted>
-                        <h6 className={classes.cardCategory}>FOUNDER</h6>
-                      </Muted>
-                      <p className={classes.description}>
-                        Don{"'"}t be scared of the truth because we need to
-                        restart the human foundation in truth...
-                      </p>
-                    </CardBody>
-                    <CardFooter profile plain>
-                      <Button justIcon simple color="twitter">
-                        <i className="fab fa-twitter" />
-                      </Button>
-                      <Button justIcon simple color="facebook">
-                        <i className="fab fa-facebook-square" />
-                      </Button>
-                      <Button justIcon simple color="google">
-                        <i className="fab fa-google" />
-                      </Button>
-                    </CardFooter>
-                  </GridItem>
-                </GridContainer>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={6} md={6}>
-              <Card profile plain className={classes.card3}>
-                <GridContainer>
-                  <GridItem xs={12} sm={5} md={5}>
-                    <CardHeader image plain>
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        <img src={cardProfile6Square} alt="..." />
-                      </a>
-                      <div
-                        className={classes.coloredShadow}
-                        style={{
-                          backgroundImage: `url(${cardProfile6Square})`,
-                          opacity: "1"
-                        }}
-                      />
-                    </CardHeader>
-                  </GridItem>
-                  <GridItem xs={12} sm={7} md={7}>
-                    <CardBody plain>
-                      <h4 className={classes.cardTitle}>Kendall Andrew</h4>
-                      <Muted>
-                        <h6 className={classes.cardCategory}>
-                          GRAPHIC DESIGNER
-                        </h6>
-                      </Muted>
-                      <p className={classes.description}>
-                        Don{"'"}t be scared of the truth because we need to
-                        restart the human foundation in truth...
-                      </p>
-                    </CardBody>
-                    <CardFooter profile plain>
-                      <Button justIcon simple color="linkedin">
-                        <i className="fab fa-linkedin-in" />
-                      </Button>
-                      <Button justIcon simple color="facebook">
-                        <i className="fab fa-facebook-square" />
-                      </Button>
-                      <Button justIcon simple color="dribbble">
-                        <i className="fab fa-dribbble" />
-                      </Button>
-                      <Button justIcon simple color="google">
-                        <i className="fab fa-google" />
-                      </Button>
-                    </CardFooter>
-                  </GridItem>
-                </GridContainer>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={6} md={6}>
-              <Card profile plain className={classes.card3}>
-                <GridContainer>
-                  <GridItem xs={12} sm={5} md={5}>
-                    <CardHeader image plain>
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        <img src={cardProfile4Square} alt="..." />
-                      </a>
-                      <div
-                        className={classes.coloredShadow}
-                        style={{
-                          backgroundImage: `url(${cardProfile4Square})`,
-                          opacity: "1"
-                        }}
-                      />
-                    </CardHeader>
-                  </GridItem>
-                  <GridItem xs={12} sm={7} md={7}>
-                    <CardBody plain>
-                      <h4 className={classes.cardTitle}>Gina Andrew</h4>
-                      <Muted>
-                        <h6 className={classes.cardCategory}>WEB DESIGNER</h6>
-                      </Muted>
-                      <p className={classes.description}>
-                        I love you like Kanye loves Kanye. Don{"'"}t be scared
-                        of the truth.
-                      </p>
-                    </CardBody>
-                    <CardFooter profile plain>
-                      <Button justIcon simple color="youtube">
-                        <i className="fab fa-youtube" />
-                      </Button>
-                      <Button justIcon simple color="twitter">
-                        <i className="fab fa-twitter" />
-                      </Button>
-                      <Button justIcon simple color="instagram">
-                        <i className="fab fa-instagram" />
-                      </Button>
-                    </CardFooter>
-                  </GridItem>
-                </GridContainer>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={6} md={6}>
-              <Card profile plain className={classes.card3}>
-                <GridContainer>
-                  <GridItem xs={12} sm={5} md={5}>
-                    <CardHeader image plain>
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        <img src={cardProfile2Square} alt="..." />
-                      </a>
-                      <div
-                        className={classes.coloredShadow}
-                        style={{
-                          backgroundImage: `url(${cardProfile2Square})`,
-                          opacity: "1"
-                        }}
-                      />
-                    </CardHeader>
-                  </GridItem>
-                  <GridItem xs={12} sm={7} md={7}>
-                    <CardBody plain>
-                      <h4 className={classes.cardTitle}>George West</h4>
-                      <Muted>
-                        <h6 className={classes.cardCategory}>BACKEND HACKER</h6>
-                      </Muted>
-                      <p className={classes.description}>
-                        I love you like Kanye loves Kanye. Don{"'"}t be scared
-                        of the truth.
-                      </p>
-                    </CardBody>
-                    <CardFooter profile plain>
-                      <Button justIcon simple color="linkedin">
-                        <i className="fab fa-linkedin-in" />
-                      </Button>
-                      <Button justIcon simple color="facebook">
-                        <i className="fab fa-facebook-square" />
-                      </Button>
-                      <Button justIcon simple color="google">
-                        <i className="fab fa-google" />
-                      </Button>
-                    </CardFooter>
-                  </GridItem>
-                </GridContainer>
-              </Card>
-            </GridItem>
-          </GridContainer>
-        </div>
-      </div>
-      {/* Team 3 END */}
-      {/* Team 4 START */}
-      <div
-        className={classes.team + " " + classes.section}
-        style={{ backgroundImage: `url(${bg7})` }}
-      >
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem
-              xs={12}
-              sm={8}
-              md={8}
-              className={
-                classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
-              }
-            >
-              <h2 className={classes.title}>The Executive Team 4</h2>
-              <h5 className={classes.descriptionWhite}>
-                This is the paragraph where you can write more details about
-                your team. Keep you user engaged by providing meaningful
-                information.
-              </h5>
-            </GridItem>
-          </GridContainer>
-          <GridContainer>
-            <GridItem xs={12} sm={4} md={4}>
-              <Card profile>
-                <CardAvatar profile>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={cardProfile1Square} alt="..." />
-                  </a>
-                </CardAvatar>
-                <CardBody>
-                  <h4 className={classes.cardTitle}>Alec Thompson</h4>
-                  <Muted>
-                    <h6 className={classes.cardCategory}>CEO / CO-FOUNDER</h6>
-                  </Muted>
-                  <p className={classes.description}>
-                    Don{"'"}t be scared of the truth because we need to restart
-                    the human foundation in truth And I love you like Kanye
-                    loves Kanye I love Rick Owens’ bed design but the back is...
-                  </p>
-                </CardBody>
-                <CardFooter profile className={classes.justifyContent}>
-                  <Button justIcon round color="linkedin">
-                    <i className="fab fa-linkedin-in" />
-                  </Button>
-                  <Button justIcon round color="twitter">
-                    <i className="fab fa-twitter" />
-                  </Button>
-                  <Button justIcon round color="dribbble">
-                    <i className="fab fa-dribbble" />
-                  </Button>
-                </CardFooter>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={4} md={4}>
-              <Card profile>
-                <CardAvatar profile>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={cardProfile2Square} alt="..." />
-                  </a>
-                </CardAvatar>
-                <CardBody>
-                  <h4 className={classes.cardTitle}>George West</h4>
-                  <Muted>
-                    <h6 className={classes.cardCategory}>BACKEND HACKER</h6>
-                  </Muted>
-                  <p className={classes.description}>
-                    Don{"'"}t be scared of the truth because we need to restart
-                    the human foundation in truth And I love you like Kanye
-                    loves Kanye I love Rick Owens’ bed design but the back is...
-                  </p>
-                </CardBody>
-                <CardFooter profile className={classes.justifyContent}>
-                  <Button justIcon round color="dribbble">
-                    <i className="fab fa-dribbble" />
-                  </Button>
-                  <Button justIcon round color="twitter">
-                    <i className="fab fa-twitter" />
-                  </Button>
-                </CardFooter>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={4} md={4}>
-              <Card profile>
-                <CardAvatar profile>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={cardProfile4Square} alt="..." />
-                  </a>
-                </CardAvatar>
-                <CardBody>
-                  <h4 className={classes.cardTitle}>Gina Andrew</h4>
-                  <Muted>
-                    <h6 className={classes.cardCategory}>WEB DESIGNER</h6>
-                  </Muted>
-                  <p className={classes.description}>
-                    Don{"'"}t be scared of the truth because we need to restart
-                    the human foundation in truth And I love you like Kanye
-                    loves Kanye I love Rick Owens’ bed design but the back is...
-                  </p>
-                </CardBody>
-                <CardFooter profile className={classes.justifyContent}>
-                  <Button justIcon round color="dribbble">
-                    <i className="fab fa-dribbble" />
-                  </Button>
-                  <Button justIcon round color="twitter">
-                    <i className="fab fa-twitter" />
-                  </Button>
-                  <Button justIcon round color="pinterest">
-                    <i className="fab fa-pinterest" />
-                  </Button>
-                </CardFooter>
-              </Card>
-            </GridItem>
-          </GridContainer>
-        </div>
-      </div>
-      {/* Team 4 END */}
-      {/* Team 5 START */}
-      <div
-        className={classes.team + " " + classes.section}
-        style={{ backgroundImage: `url(${city})` }}
-      >
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem
-              xs={12}
-              sm={8}
-              md={8}
-              className={
-                classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
-              }
-            >
-              <h2 className={classes.title}>The Executive Team 5</h2>
-              <h5 className={classes.descriptionWhite}>
-                This is the paragraph where you can write more details about
-                your team. Keep you user engaged by providing meaningful
-                information.
-              </h5>
-            </GridItem>
-          </GridContainer>
-          <GridContainer>
-            <GridItem xs={12} sm={6} md={6}>
-              <Card profile plain className={classes.card5}>
-                <GridContainer>
-                  <GridItem xs={12} sm={5} md={5}>
-                    <CardHeader image plain>
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        <img src={cardProfile1Square} alt="..." />
-                      </a>
-                    </CardHeader>
-                  </GridItem>
-                  <GridItem xs={12} sm={7} md={7}>
-                    <CardBody plain>
-                      <h4 className={classes.cardTitle}>Alec Thompson</h4>
-                      <Muted>
-                        <h6 className={classes.cardCategory}>FOUNDER</h6>
-                      </Muted>
-                      <p className={classes.description}>
-                        Don{"'"}t be scared of the truth because we need to
-                        restart the human foundation in truth...
-                      </p>
-                    </CardBody>
-                    <CardFooter profile plain>
-                      <Button justIcon simple>
-                        <i className="fab fa-twitter" />
-                      </Button>
-                      <Button justIcon simple>
-                        <i className="fab fa-facebook-square" />
-                      </Button>
-                      <Button justIcon simple>
-                        <i className="fab fa-google" />
-                      </Button>
-                    </CardFooter>
-                  </GridItem>
-                </GridContainer>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={6} md={6}>
-              <Card profile plain className={classes.card5}>
-                <GridContainer>
-                  <GridItem xs={12} sm={5} md={5}>
-                    <CardHeader image plain>
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        <img src={cardProfile6Square} alt="..." />
-                      </a>
-                    </CardHeader>
-                  </GridItem>
-                  <GridItem xs={12} sm={7} md={7}>
-                    <CardBody plain>
-                      <h4 className={classes.cardTitle}>Kendall Andrew</h4>
-                      <Muted>
-                        <h6 className={classes.cardCategory}>
-                          GRAPHIC DESIGNER
-                        </h6>
-                      </Muted>
-                      <p className={classes.description}>
-                        Don{"'"}t be scared of the truth because we need to
-                        restart the human foundation in truth...
-                      </p>
-                    </CardBody>
-                    <CardFooter profile plain>
-                      <Button justIcon simple>
-                        <i className="fab fa-linkedin-in" />
-                      </Button>
-                      <Button justIcon simple>
-                        <i className="fab fa-facebook-square" />
-                      </Button>
-                      <Button justIcon simple>
-                        <i className="fab fa-dribbble" />
-                      </Button>
-                      <Button justIcon simple>
-                        <i className="fab fa-google" />
-                      </Button>
-                    </CardFooter>
-                  </GridItem>
-                </GridContainer>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={6} md={6}>
-              <Card profile plain className={classes.card5}>
-                <GridContainer>
-                  <GridItem xs={12} sm={5} md={5}>
-                    <CardHeader image plain>
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        <img src={cardProfile4Square} alt="..." />
-                      </a>
-                    </CardHeader>
-                  </GridItem>
-                  <GridItem xs={12} sm={7} md={7}>
-                    <CardBody plain>
-                      <h4 className={classes.cardTitle}>Gina Andrew</h4>
-                      <Muted>
-                        <h6 className={classes.cardCategory}>WEB DESIGNER</h6>
-                      </Muted>
-                      <p className={classes.description}>
-                        I love you like Kanye loves Kanye. Don{"'"}t be scared
-                        of the truth.
-                      </p>
-                    </CardBody>
-                    <CardFooter profile plain>
-                      <Button justIcon simple>
-                        <i className="fab fa-youtube" />
-                      </Button>
-                      <Button justIcon simple>
-                        <i className="fab fa-twitter" />
-                      </Button>
-                      <Button justIcon simple>
-                        <i className="fab fa-instagram" />
-                      </Button>
-                    </CardFooter>
-                  </GridItem>
-                </GridContainer>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={6} md={6}>
-              <Card profile plain className={classes.card5}>
-                <GridContainer>
-                  <GridItem xs={12} sm={5} md={5}>
-                    <CardHeader image plain>
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        <img src={cardProfile2Square} alt="..." />
-                      </a>
-                    </CardHeader>
-                  </GridItem>
-                  <GridItem xs={12} sm={7} md={7}>
-                    <CardBody plain>
-                      <h4 className={classes.cardTitle}>George West</h4>
-                      <Muted>
-                        <h6 className={classes.cardCategory}>BACKEND HACKER</h6>
-                      </Muted>
-                      <p className={classes.description}>
-                        I love you like Kanye loves Kanye. Don{"'"}t be scared
-                        of the truth.
-                      </p>
-                    </CardBody>
-                    <CardFooter profile plain>
-                      <Button justIcon simple>
-                        <i className="fab fa-linkedin-in" />
-                      </Button>
-                      <Button justIcon simple>
-                        <i className="fab fa-facebook-square" />
-                      </Button>
-                      <Button justIcon simple>
-                        <i className="fab fa-google" />
-                      </Button>
-                    </CardFooter>
-                  </GridItem>
-                </GridContainer>
-              </Card>
-            </GridItem>
-          </GridContainer>
-        </div>
-      </div>
-      {/* Team 5 END */}
     </div>
   );
 }
