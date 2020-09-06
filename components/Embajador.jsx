@@ -25,6 +25,10 @@ export default ({ name, description, causa, instagram, image }) => {
         <CardBody>
           <h4 className={classes.cardTitle}>{name}</h4>
           <p className={classes.description}>{description}</p>
+
+          <p className={classes.description}>
+            <strong>Causas: {causa}</strong>
+          </p>
         </CardBody>
         <CardFooter profile className={classes.justifyContent}>
           <a target='_blank' href={instagram}>

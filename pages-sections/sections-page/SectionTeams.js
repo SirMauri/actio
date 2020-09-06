@@ -44,6 +44,7 @@ const embajadores = [
       'Andrea Cobos 28 años, es esposa, madre, conferencista internacional de Teología del Cuerpo y consultora familiar. Cuenta con una Maestría en Ciencias de la Familia y actualmente está cursando una especialidad en Teología del Cuerpo por el Instituto de Filadelfia. Creadora de contenido sobre el amor humano, espiritualidad y vida en su cuenta de IG @andreacobostdc. Es parte de la comunidad @amarasyoficial donde dan respuestas a la luz de la teología del cuerpo.',
     instagram: 'https://www.instagram.com/andreacobostdc/',
     image: andrea,
+    causa: 'Banco de alimentos',
   },
   {
     nombre: 'Rorro Echávez',
@@ -51,6 +52,7 @@ const embajadores = [
       'Rorro es un joven optimista que busca impulsar la mejor versión de las personas y las organizaciones. Por eso es creador de contenido, director creativo, conferencista y autor de 2 libros, para ayudar a los demás a crecer como personas para así, juntos crecer como sociedad.',
     instagram: 'https://www.instagram.com/rorroechavez/',
     image: rorro,
+    causa: 'Unión por los niños',
   },
   {
     nombre: 'Padre Javier Gaxiola LC',
@@ -58,6 +60,7 @@ const embajadores = [
       'Es sacerdote católico desde diciembre del 2017. Es Director local del RC Guadalajara sur y de la sección de jóvenes del Regnum Christi. Autor de “El Último recuerdo” y “Confesiones de un millennial”. Host del podcast “sin filtro” y su propio podcast, ha trabajado y apoyado en la formación y pastoral de jóvenes varones en Alemania, Austria, Italia y México. Apasionado de todo lo humano en el plan divino.',
     instagram: 'https://www.instagram.com/padregaxiola/',
     image: javier,
+    causa: 'Soñar despierto',
   },
   {
     nombre: 'Ana Lourdes Ezquerra',
@@ -65,6 +68,7 @@ const embajadores = [
       'Ana Lourdes Ezquerra Félix, Lic en Comunicación Publicidad y Relaciones Publicas. Podcaster, Speaker y creadora de contenido de crecimiento personal.',
     instagram: 'https://www.instagram.com/analourdesef/',
     image: analu,
+    causa: 'Soñar despierto',
   },
   {
     nombre: 'Alex Vargas',
@@ -72,6 +76,7 @@ const embajadores = [
       'Alex Vargas es estudiante de economía y gestión empresarial en Roma, creador de contenido y apasionado por las relaciones humanas. Alex busca inspirar a Dios  en las personas y compartir que, con amor, grandes cosas suceden.',
     instagram: 'https://www.instagram.com/alexvardel/',
     image: alex,
+    causa: 'FM4 Paso Libre',
   },
   {
     nombre: 'Mariángela Guerra',
@@ -79,6 +84,7 @@ const embajadores = [
       'Soy Mariángela. Cantante y compositora mexicana. Estudiante de filosofía que busca sumar su granito de arena al mundo desde el Amor y la sinceridad.',
     instagram: 'https://www.instagram.com/mariangelaguerra/',
     image: chispita,
+    causa: 'La Cana',
   },
   {
     nombre: 'Clara Cuevas',
@@ -86,6 +92,7 @@ const embajadores = [
       'Soy Lic. En comunicación audiovisual,  Conferencista y creadora de contenido enfocada en promoción y análisis de la lectura. Co-creadora del podcast @el.planD. En mi cuenta de Instagram hablo de lo que más amo que es vivir el evangelio acompañada de la cotidianidad de mi vida.',
     instagram: 'https://www.instagram.com/claracuevas3/',
     image: clara,
+    causa: 'La Cana',
   },
   {
     nombre: 'Elisa',
@@ -93,6 +100,7 @@ const embajadores = [
       'Tengo 21 años. Soy de Veracruz, México. Soy creadora de Contenido en Youtube e Instagram desde el 2016. Estudiante en la Licenciatura de Comunicación.  Soy una mujer dispuesta día con día a proyectar alegría e impactar de manera positiva la vida de los demás a través de sus redes sociales.',
     instagram: 'https://www.instagram.com/soyelisam/',
     image: elisa,
+    causa: 'CIRIAC',
   },
   {
     nombre: 'Elizabeth Soto',
@@ -100,6 +108,7 @@ const embajadores = [
       'Es Pedagoga graduada de la Universidad Panamericana. Es conductora y locutora del programa formarte en valora radio, graba cápsulas de contenido formativo, educativo, crecimiento personal y espiritual para María visión. Actualmente es creadora de contenido de valor en redes sociales en plataformas como Spotify y Apple podcasts.',
     instagram: 'https://www.instagram.com/elizabethsoto6/',
     image: elizabeth,
+    causa: 'Soñar despierto',
   },
   {
     nombre: 'Idania',
@@ -107,6 +116,7 @@ const embajadores = [
       'Idania Ibarra Hernández es originaria de Cocula, Jalisco y tiene 23 años de edad. Estudia la carrera de Derecho. Es apasionada del futbol, emprendedora de un proyecto nuevo venta de articulos religiosos. Es conferencista y creadora de contenido de crecimiento personal integral y desarrollo humano.',
     instagram: 'https://www.instagram.com/idaniaibarra/',
     image: idania,
+    causa: 'Monumental',
   },
   {
     nombre: 'Juan Ca',
@@ -114,6 +124,7 @@ const embajadores = [
       'Qué tal mi nombre es Juan Carlos Amezcua, soy una persona humilde y servicial, me encanta el poder aportar mi granito de arena y ayudar a los demás, estoy listo para hacer de este mundo uno mejor.',
     instagram: 'https://www.instagram.com/juancaamezcua/',
     image: juan,
+    causa: 'Unión por los niños',
   },
   {
     nombre: 'Rod. G. Puerta',
@@ -121,6 +132,7 @@ const embajadores = [
       'Rodrigo es una persona 100% convencida que todos poseemos la sabiduría necesaria para aportar positivamente a la sociedad, sin embargo la sabiduría de algunos se encuentra dormida. Rodrigo se ha preparado para convertirse en una herramienta para despertar esa sabiduría en los demás a través de la consciencia y la atención plena.',
     instagram: 'https://www.instagram.com/rodgpuerta/',
     image: rod,
+    causa: 'Monumental',
   },
   {
     nombre: 'Jorge Calderón',
@@ -128,6 +140,7 @@ const embajadores = [
       'Soy Jorge Calderon, tengo 25 años. Dedicado al trabajo, familia y amigos. Además, Creador de contenido positivo, buscando ayudar y motivar a personas.',
     instagram: 'https://www.instagram.com/jorgecalderonf/',
     image: jorge,
+    causa: 'Soñar despierto Gdl Sur.',
   },
   {
     nombre: 'Sofía Carmona',
@@ -135,6 +148,7 @@ const embajadores = [
       'Sofía Carmona nació en Guadalajara y creció en la tierra de Mexicali. Tiene 20 años y actualmente es cantautora. Es apasionada de la música, las letras, y tiene como propósito contribuir de manera positiva en la sociedad. Actualmente, está preparando y su desarrollando su nuevo proyecto musical con las disqueras Warner Bros. y Universal Music México. En unos meses lanzará su primer álbum, el cual pronto tendremos oportunidad de escuchar.',
     instagram: 'https://www.instagram.com/sofiacarmona.c/',
     image: sofia,
+    causa: 'La Cana',
   },
   {
     nombre: 'H. Gustavo Godínez, LC',
@@ -142,6 +156,7 @@ const embajadores = [
       'Tiene 29 años de edad y 9 de religioso. Se dedica a la pastoral juvenil y su mayor ilusión es acompañar a los jóvenes en su camino hacia Dios. Autor del libro “Hacer el amor con Amor” y creador de contenido de evangelización en redes.',
     instagram: 'https://www.instagram.com/godinezlc/',
     image: gustavo,
+    causa: 'La Cana',
   },
 ];
 
@@ -154,6 +169,7 @@ export default function SectionTeams({ ...rest }) {
       description={el.description}
       causa={el.causa}
       instagram={el.instagram}
+      causa={el.causa}
     />
   ));
   return (
