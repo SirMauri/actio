@@ -59,9 +59,7 @@ export default function Header(props) {
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
         <Button className={classes.title}>
-          <Link href='/embajadores'>
-            <a>actio</a>
-          </Link>
+          <a href='https://store.actiomx.com'>actio</a>
         </Button>
         <Hidden smDown implementation='css' className={classes.hidden}>
           <div className={classes.collapse}>{links}</div>
