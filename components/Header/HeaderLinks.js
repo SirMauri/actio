@@ -99,7 +99,7 @@ export default function HeaderLinks(props) {
           <a className={classes.dropdownLink}>Causas</a>
         </Link>
       </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           navDropdown
@@ -268,6 +268,7 @@ export default function HeaderLinks(props) {
           ]}
         />
       </ListItem>
+    </List> */}
     </List>
   );
 }
