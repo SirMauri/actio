@@ -27,7 +27,7 @@ export default ({ name, description, causa, instagram, image }) => {
           <p className={classes.description}>{description}</p>
 
           <p className={classes.description}>
-            <strong>Causas: {causa}</strong>
+            <strong>Causa: {causa}</strong>
           </p>
         </CardBody>
         <CardFooter profile className={classes.justifyContent}>
