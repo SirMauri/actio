@@ -15,12 +15,6 @@ import GridContainer from 'components/Grid/GridContainer.js';
 import GridItem from 'components/Grid/GridItem.js';
 import Parallax from 'components/Parallax/Parallax.js';
 import Footer from 'components/Footer/Footer.js';
-// sections for this page
-import SectionDescription from 'pages-sections/about-us/SectionDescription.js';
-import SectionTeam from 'pages-sections/about-us/SectionTeam.js';
-import SectionServices from 'pages-sections/about-us/SectionServices.js';
-import SectionOffice from 'pages-sections/about-us/SectionOffice.js';
-import SectionContact from 'pages-sections/about-us/SectionContact.js';
 
 import aboutUsStyle from 'assets/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js';
 import SectionTeams from '../pages-sections/sections-page/SectionTeams';
