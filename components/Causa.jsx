@@ -16,7 +16,7 @@ import sectionPillsStyle from 'assets/jss/nextjs-material-kit-pro/pages/blogPost
 
 const useStyles = makeStyles(sectionPillsStyle);
 
-export default function Causa({ name }) {
+export default function Causa({ name, description }) {
   const classes = useStyles();
 
   return (
@@ -27,13 +27,10 @@ export default function Causa({ name }) {
           <a href='#pablo'>
             <h3 className={classes.cardTitle}>{name}</h3>
           </a>
-          <p className={classes.category}>
-            Don{"'"}t be scared of the truth because we need to restart the human foundation in truth And I love you
-            like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-          </p>
-          <Button round href='#pablo' color='danger'>
+          <p className={classes.category}>{description}</p>
+          {/* <Button round href='#pablo' color='danger'>
             <FormatAlignLeft className={classes.icons} /> Leer más
-          </Button>
+          </Button> */}
         </CardBody>
       </Card>
     </GridItem>
