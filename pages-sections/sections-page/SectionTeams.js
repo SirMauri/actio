@@ -125,7 +125,7 @@ const embajadores = [
     nombre: 'Juan Ca',
     description:
       'Qué tal mi nombre es Juan Carlos Amezcua, soy una persona humilde y servicial, me encanta el poder aportar mi granito de arena y ayudar a los demás, estoy listo para hacer de este mundo uno mejor.',
-    instagram: 'juancaamezcua',
+    instagram: 'https://www.instagram.com/juancaamezcua/',
     image: juan,
   },
   {

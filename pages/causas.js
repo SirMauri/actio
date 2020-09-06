@@ -1,7 +1,5 @@
 /*eslint-disable*/
 import React from 'react';
-// nodejs library that concatenates classes
-import classNames from 'classnames';
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
@@ -11,17 +9,17 @@ import Favorite from '@material-ui/icons/Favorite';
 // core components
 import Header from 'components/Header/Header.js';
 import HeaderLinks from 'components/Header/HeaderLinks.js';
+import Footer from 'components/Footer/Footer.js';
 import GridContainer from 'components/Grid/GridContainer.js';
 import GridItem from 'components/Grid/GridItem.js';
 import Parallax from 'components/Parallax/Parallax.js';
-import Footer from 'components/Footer/Footer.js';
+// sections for this page
+import SectionPills from 'pages-sections/blog-posts/SectionPills.js';
+import blogPostsPageStyle from 'assets/jss/nextjs-material-kit-pro/pages/blogPostsPageStyle.js';
 
-import aboutUsStyle from 'assets/jss/nextjs-material-kit-pro/pages/aboutUsStyle.js';
-import SectionTeams from '../pages-sections/sections-page/SectionTeams';
+const useStyles = makeStyles(blogPostsPageStyle);
 
-const useStyles = makeStyles(aboutUsStyle);
-
-export default function AboutUsPage() {
+export default function BlogPostsPage() {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -30,28 +28,26 @@ export default function AboutUsPage() {
   return (
     <div>
       <Header
-        brand='NextJS Material Kit PRO'
         links={<HeaderLinks dropdownHoverColor='info' />}
         fixed
         color='transparent'
         changeColorOnScroll={{
-          height: 300,
+          height: 400,
           color: 'white',
         }}
       />
-      <Parallax image={require('assets/img/bg9.jpg')} filter='dark' small>
+      <Parallax image={require('assets/img/bg10.jpg')} filter='dark' small>
         <div className={classes.container}>
           <GridContainer justify='center'>
-            <GridItem md={8} sm={8} className={classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)}>
-              <h1 className={classes.title}>Nuestros Embajadores</h1>
-              <h4>Conoce a nuestro asombroso equipo detrás de este proyecto.</h4>
+            <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
+              <h2 className={classes.title}>Descubre nuestras causas.</h2>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={classes.main}>
         <div className={classes.container}>
-          <SectionTeams />
+          <SectionPills />
         </div>
       </div>
       <Footer

@@ -272,16 +272,7 @@ export default function HeaderLinks(props) {
             </Link>,
           ]}
         />
-      </ListItem>
-    </List> */}
+      </ListItem> */}
     </List>
   );
 }
-
-HeaderLinks.defaultProps = {
-  hoverColor: 'primary',
-};
-
-HeaderLinks.propTypes = {
-  dropdownHoverColor: PropTypes.oneOf(['dark', 'primary', 'info', 'success', 'warning', 'danger', 'rose']),
-};

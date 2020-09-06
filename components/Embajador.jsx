@@ -20,9 +20,7 @@ export default ({ name, description, causa, instagram, image }) => {
     <GridItem xs={12} sm={4} md={4}>
       <Card profile>
         <CardAvatar profile>
-          <a href='#pablo' onClick={(e) => e.preventDefault()}>
-            <img src={image} alt={name} />
-          </a>
+          <img src={image} alt={name} />
         </CardAvatar>
         <CardBody>
           <h4 className={classes.cardTitle}>{name}</h4>
