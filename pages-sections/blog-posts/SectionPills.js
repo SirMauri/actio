@@ -21,40 +21,57 @@ import Causa from '../../components/Causa';
 
 const useStyles = makeStyles(sectionPillsStyle);
 
+import fm4 from 'assets/img/actio_causas/FM4.png';
+import juan from 'assets/img/actio_causas/juan.png';
+import ciriac from 'assets/img/actio_causas/ciriac.png';
+import monu from 'assets/img/actio_causas/MonuMental logo.png';
+import sd from 'assets/img/actio_causas/soñardespierto logo.png';
+import cana from 'assets/img/actio_causas/cana.png';
+import union from 'assets/img/actio_causas/union.png';
+
 const Causas = [
   {
     name: 'FM4 Paso Libre',
     description: 'Atención integral a migrantes y refugiados en la Zona Metropolitana de Guadalajara.',
+    image: fm4,
   },
   {
     name: 'JUANACATLÁN',
     description: 'Rescatan y brindan alimento a las personas en situación de carencia alimentaria.',
+    image: juan,
   },
   {
     name: 'CENTRO INTEGRAL DE REHABILITACIÓN INFANTIL',
     description: 'Mejorar la calidad de vida de las personas con parálisis cerebral y sus famiilas.',
+    image: ciriac,
   },
   {
     name: 'MonuMental ClubHouse',
     description: 'recuperación de personas que viven con una enfermedad mental.',
+    image: monu,
   },
   {
     name: 'Soñar Despierto',
     description:
       'Asociación de ayuda a niños con situaciones familiares irregulares, por medio de programas de voluntariado.',
+    image: sd,
   },
   {
     name: 'La Cana',
     description: 'Es un proyecto social que busca crear oportunidades de trabajo para mujeres en prisión.',
+    image: cana,
   },
   {
     name: 'Unión por los niños',
     description:
       'Impulsan el desarrollo integral y de manera sostenible de niños, niñas y adolescentes en situación de vulnerabilidad',
+    image: union,
   },
 ];
 
-let causasElements = Causas.map((el, key) => <Causa name={el.name} description={el.description} />);
+let causasElements = Causas.map((el, key) => (
+  <Causa key={key} name={el.name} description={el.description} image={el.image} />
+));
 
 export default function SectionPills() {
   const classes = useStyles();

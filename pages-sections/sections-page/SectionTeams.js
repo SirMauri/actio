@@ -16,20 +16,6 @@ import Muted from 'components/Typography/Muted.js';
 
 import teamsStyle from 'assets/jss/nextjs-material-kit-pro/pages/sectionsSections/teamsStyle.js';
 
-import bg7 from 'assets/img/bg7.jpg';
-import city from 'assets/img/examples/city.jpg';
-import marc from 'assets/img/faces/marc.jpg';
-import christian from 'assets/img/faces/christian.jpg';
-import kendall from 'assets/img/faces/kendall.jpg';
-import avatar from 'assets/img/faces/avatar.jpg';
-import cardProfile1 from 'assets/img/examples/card-profile1.jpg';
-import cardProfile2 from 'assets/img/examples/card-profile2.jpg';
-import cardProfile4 from 'assets/img/examples/card-profile4.jpg';
-import cardProfile1Square from 'assets/img/faces/card-profile1-square.jpg';
-import cardProfile2Square from 'assets/img/faces/card-profile2-square.jpg';
-import cardProfile4Square from 'assets/img/faces/card-profile4-square.jpg';
-import cardProfile6Square from 'assets/img/faces/card-profile6-square.jpg';
-
 import Embajador from '../../components/Embajador';
 
 // images

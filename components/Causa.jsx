@@ -16,17 +16,17 @@ import sectionPillsStyle from 'assets/jss/nextjs-material-kit-pro/pages/blogPost
 
 const useStyles = makeStyles(sectionPillsStyle);
 
-export default function Causa({ name, description }) {
+export default function Causa({ name, description, image }) {
   const classes = useStyles();
 
   return (
     <GridItem xs={12} sm={6} md={6}>
-      <Card raised background style={{ backgroundImage: 'url(' + office2 + ')' }}>
+      <Card raised background style={{ backgroundImage: 'url(' + image + ')' }}>
         <CardBody background>
           <h6 className={classes.category}>Causa</h6>
-          <a href='#pablo'>
-            <h3 className={classes.cardTitle}>{name}</h3>
-          </a>
+          {/* <a href='#pablo'> */}
+          <h3 className={classes.cardTitle}>{name}</h3>
+          {/* </a> */}
           <p className={classes.category}>{description}</p>
           {/* <Button round href='#pablo' color='danger'>
             <FormatAlignLeft className={classes.icons} /> Leer más
