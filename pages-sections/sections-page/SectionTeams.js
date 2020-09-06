@@ -47,6 +47,7 @@ import idania from 'assets/img/action_embajadores/idania.jpeg';
 import andrea from 'assets/img/action_embajadores/andrea.jpeg';
 import chispita from 'assets/img/action_embajadores/chispita.jpeg';
 import elizabeth from 'assets/img/action_embajadores/elizabeth.jpeg';
+import gustavo from 'assets/img/action_embajadores/gustavo.jpg';
 
 const useStyles = makeStyles(teamsStyle);
 
@@ -80,7 +81,7 @@ const embajadores = [
     image: analu,
   },
   {
-    nombre: 'Alex Vargas Delgado',
+    nombre: 'Alex Vargas',
     description:
       'Alex Vargas es estudiante de economía y gestión empresarial en Roma, creador de contenido y apasionado por las relaciones humanas. Alex busca inspirar a Dios  en las personas y compartir que, con amor, grandes cosas suceden.',
     instagram: 'https://www.instagram.com/alexvardel/',
@@ -148,6 +149,13 @@ const embajadores = [
       'Sofía Carmona nació en Guadalajara y creció en la tierra de Mexicali. Tiene 20 años y actualmente es cantautora. Es apasionada de la música, las letras, y tiene como propósito contribuir de manera positiva en la sociedad. Actualmente, está preparando y su desarrollando su nuevo proyecto musical con las disqueras Warner Bros. y Universal Music México. En unos meses lanzará su primer álbum, el cual pronto tendremos oportunidad de escuchar.',
     instagram: 'https://www.instagram.com/sofiacarmona.c/',
     image: sofia,
+  },
+  {
+    nombre: 'H. Gustavo Godínez, LC',
+    description:
+      'Tiene 29 años de edad y 9 de religioso. Se dedica a la pastoral juvenil y su mayor ilusión es acompañar a los jóvenes en su camino hacia Dios. Autor del libro “Hacer el amor con Amor” y creador de contenido de evangelización en redes.',
+    instagram: 'https://www.instagram.com/godinezlc/',
+    image: gustavo,
   },
 ];
 

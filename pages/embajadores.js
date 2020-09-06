@@ -43,8 +43,11 @@ export default function AboutUsPage() {
         <div className={classes.container}>
           <GridContainer justify='center'>
             <GridItem md={8} sm={8} className={classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)}>
-              <h1 className={classes.title}>Nuestros Embajadores</h1>
-              <h4>Conoce a nuestro asombroso equipo detrás de este proyecto.</h4>
+              <h1 className={classes.title}>Embajadores Actio</h1>
+              <h4>
+                Conoce al equipo de creadores de conenido positivo que nos ayudarán a ser embajadores de este mensaje de
+                esperanza.
+              </h4>
             </GridItem>
           </GridContainer>
         </div>
