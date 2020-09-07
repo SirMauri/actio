@@ -39,7 +39,7 @@ export default function AboutUsPage() {
           color: 'white',
         }}
       />
-      <Parallax image={require('assets/img/bg9.jpg')} filter='dark' small>
+      <Parallax filter='dark' small>
         <div className={classes.container}>
           <GridContainer justify='center'>
             <GridItem md={8} sm={8} className={classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)}>
