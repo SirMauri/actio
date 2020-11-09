@@ -89,17 +89,17 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list + ' ' + classes.mlAuto}>
-      <ListItem classname={classes.listItem}>
+      <ListItem className={classes.listItem}>
         <a href='https://store.actiomx.com' className={classes.dropdownLink}>
           Tienda
         </a>
       </ListItem>
-      <ListItem classname={classes.listItem}>
+      <ListItem className={classes.listItem}>
         <Link href='/embajadores'>
           <a className={classes.dropdownLink}>Embajadores</a>
         </Link>
       </ListItem>
-      <ListItem classname={classes.listItem}>
+      <ListItem className={classes.listItem}>
         <Link href='/causas'>
           <a className={classes.dropdownLink}>Causas</a>
         </Link>

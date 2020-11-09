@@ -19,6 +19,7 @@ import teamsStyle from 'assets/jss/nextjs-material-kit-pro/pages/sectionsSection
 import Embajador from '../../components/Embajador';
 
 // images
+import fer from 'assets/img/action_embajadores/fer.jpeg';
 import rod from 'assets/img/action_embajadores/rod.jpeg';
 import alex from 'assets/img/action_embajadores/alex.jpg';
 import juan from 'assets/img/action_embajadores/juan.jpeg';
@@ -27,13 +28,15 @@ import clara from 'assets/img/action_embajadores/clara.jpg';
 import elisa from 'assets/img/action_embajadores/elisa.jpg';
 import rorro from 'assets/img/action_embajadores/rorro.jpg';
 import jorge from 'assets/img/action_embajadores/jorge.jpeg';
+import karla from 'assets/img/action_embajadores/karla.jpeg';
 import sofia from 'assets/img/action_embajadores/sofia.jpeg';
 import javier from 'assets/img/action_embajadores/javier.jpg';
-import idania from 'assets/img/action_embajadores/idania.jpeg';
 import andrea from 'assets/img/action_embajadores/andrea.jpeg';
+import brando from 'assets/img/action_embajadores/brando.jpeg';
+import idania from 'assets/img/action_embajadores/idania.jpeg';
+import gustavo from 'assets/img/action_embajadores/gustavo.jpg';
 import chispita from 'assets/img/action_embajadores/chispita.jpeg';
 import elizabeth from 'assets/img/action_embajadores/elizabeth.jpeg';
-import gustavo from 'assets/img/action_embajadores/gustavo.jpg';
 
 const useStyles = makeStyles(teamsStyle);
 
@@ -158,11 +161,34 @@ const embajadores = [
     image: gustavo,
     causa: 'La Cana',
   },
+  {
+    nombre: 'Brando angulo',
+    description:
+      'Soy empresario inmobiliario conferencista y creador de contenido para motivar y ayudar a los emprendedores en su camino.',
+    instagram: 'https://www.instagram.com/brandoangulomx/',
+    image: brando,
+    causa: 'YOAMOMX',
+  },
+  {
+    nombre: 'Fernando Rodríguez Quintanar',
+    description:
+      'Es un joven apasionado en su vida y trabajo, por qué todo lo hace con el ALMA. Cirujano Dentista Especialista en Ortodonci. Es creador de sonrisas en Rodz, fundador de Purodiente, Top doctor Invisalign, Speaker nacional.',
+    instagram: 'https://www.instagram.com/ferrodzq/',
+    image: fer,
+    causa: 'CIRIAC',
+  },
+  {
+    nombre: 'Karla Rodríguez',
+    description: 'Emprendedora, mamá y mexicana :).',
+    instagram: 'https://www.instagram.com/soymexikarla/',
+    image: karla,
+    causa: 'CEFORMA',
+  },
 ];
 
 export default function SectionTeams({ ...rest }) {
   const classes = useStyles();
-  const embajadoresGroup = embajadores.map((el, key) => (
+  const embajadoresGroup = embajadores.map((el) => (
     <Embajador
       image={el.image}
       name={el.nombre}
@@ -170,6 +196,7 @@ export default function SectionTeams({ ...rest }) {
       causa={el.causa}
       instagram={el.instagram}
       causa={el.causa}
+      key={el.nombre}
     />
   ));
   return (
