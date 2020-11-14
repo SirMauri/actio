@@ -28,6 +28,9 @@ import monu from 'assets/img/actio_causas/MonuMental logo.png';
 import sd from 'assets/img/actio_causas/soñardespierto logo.png';
 import cana from 'assets/img/actio_causas/cana.png';
 import union from 'assets/img/actio_causas/union.png';
+import juvi from 'assets/img/actio_causas/juvi.png';
+import ceforma from 'assets/img/actio_causas/ceforma.jpg';
+import yoamo from 'assets/img/actio_causas/yoamo.png';
 
 const Causas = [
   {
@@ -66,6 +69,24 @@ const Causas = [
     description:
       'Impulsan el desarrollo integral y de manera sostenible de niños, niñas y adolescentes en situación de vulnerabilidad',
     image: union,
+  },
+  {
+    name: 'YO AMO MX',
+    description:
+      'Somos una asociación civil cuyo objetivo es fomentar acciones que permitan una transformación en la calidad de niñas, niños y jóvenes de zonas vulnerables de Guadalajara, a través de proyectos integrales en materia de educación, emprendimiento, arte, cultura y deporte.',
+    image: yoamo,
+  },
+  {
+    name: 'CEFORMA',
+    description:
+      'En Centro de Formación para la Mujer, IAP promovemos el desarrollo integral de la mujer a través de Talleres de Capacitación Laboral y un Programa de Desarrollo Humano.',
+    image: ceforma,
+  },
+  {
+    name: 'JUVI',
+    description:
+      'Somos una organización de jóvenes mexicanos que buscamos ser la voz de los que no tienen voz. Hoy tenemos presencia en 14 ciudades de la República. Hemos realizado diferentes acciones en favor del no nacido, de la sociedad y de la mujer en situación vulnerable.',
+    image: juvi,
   },
 ];
 
