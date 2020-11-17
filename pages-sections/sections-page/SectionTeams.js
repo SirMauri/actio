@@ -162,7 +162,7 @@ const embajadores = [
     causa: 'La Cana',
   },
   {
-    nombre: 'Brando angulo',
+    nombre: 'Brando Angulo',
     description:
       'Soy empresario inmobiliario conferencista y creador de contenido para motivar y ayudar a los emprendedores en su camino.',
     instagram: 'https://www.instagram.com/brandoangulomx/',
