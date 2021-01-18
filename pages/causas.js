@@ -36,7 +36,7 @@ export default function BlogPostsPage() {
           color: 'white',
         }}
       />
-      <Parallax filter='dark' small>
+      <Parallax image={require('assets/img/actio/causas.png')} filter='dark' small>
         <div className={classes.container}>
           <GridContainer justify='center'>
             <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>

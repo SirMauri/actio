@@ -30,7 +30,7 @@ export default function AboutUsPage() {
   return (
     <div>
       <Header
-        brand='NextJS Material Kit PRO'
+        brand='Actio'
         links={<HeaderLinks dropdownHoverColor='info' />}
         fixed
         color='transparent'
@@ -39,16 +39,14 @@ export default function AboutUsPage() {
           color: 'white',
         }}
       />
-      <Parallax filter='dark' small>
+      <Parallax image={require('assets/img/actio/emb.png')} small>
         <div className={classes.container}>
           <GridContainer justify='center'>
-            <GridItem md={8} sm={8} className={classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)}>
-              <h1 className={classes.title}>Embajadores Actio</h1>
-              <h4>
-                Conoce al equipo de creadores de conenido positivo que nos ayudarán a ser embajadores de este mensaje de
-                esperanza.
-              </h4>
-            </GridItem>
+            <GridItem
+              md={8}
+              sm={8}
+              className={classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)}
+            ></GridItem>
           </GridContainer>
         </div>
       </Parallax>
